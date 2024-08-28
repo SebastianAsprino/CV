@@ -1,0 +1,247 @@
+{
+  "basics": {
+    "name": "Sebastian Alejandro Asprino Ortiz",
+    "label": "Fullstack",
+    "image": "",
+    "email": "contacto@asprino.dev",
+    "phone": "+57 3013046076",
+    "url": "https://asprino.dev",
+    "summary": "Soy un desarrollador full-stack apasionado con experiencia en la creación de soluciones innovadoras y eficientes. Como socio de Undercodes y Moecorp, tengo una trayectoria sólida en liderar proyectos y equipos para desarrollar Software de alta calidad.",
+    "location": {
+      "city": "Colombia",
+      "countryCode": "CO"
+    },
+    "profiles": [      
+      {
+        "network": "LinkedIn",
+        "username": "sebastian-alejandro-asprino-ortiz-432075249",
+        "url": "https://www.linkedin.com/in/sebastian-alejandro-asprino-ortiz-432075249/"
+      },
+      {
+        "network": "GitHub",
+        "username": "SebastianAsprino",
+        "url": "https://github.com/SebastianAsprino"
+      }
+    ]
+  },
+  "work": [{
+    "name": "UnderCodes S.A.S",
+    "position": "Cofounder y Director de Tecnología",
+    "url": "https://www.undercodes.net",
+    "startDate": "2024-01-01",
+    "endDate": null,
+    "summary": "Como cofundador y Director de Tecnología de UnderCodes S.A.S, desempeño un papel crucial en la definición de la dirección y estrategia tecnológica de nuestra startup. Desde enero de 2024, he sido fundamental en el establecimiento y crecimiento de las capacidades técnicas de nuestra empresa.",
+    "highlights": [
+      "startup"
+    ]
+  }],
+  "volunteer": [{
+    "organization": "INNOVA",
+    "position": "Director de Ciberseguridad",
+    "url": "https://www.uninorte.edu.co/web/bienestar-universitario-2/innova",
+    "startDate": "2024-01-01",
+    "endDate": null,
+    "summary": "Como director de ciberseguridad en el comite cientifico estudiantil de ingeniera de sistemas, enseñe a los estudiantes mejores practicas referente a la seguridad de su codigo y charlas para los no ingenieros de sistemas para que se cuiden en internet.",
+    "highlights": [
+    ]
+  }],
+
+
+
+
+
+
+
+
+
+  "education": [{
+    "institution": "University",
+    "url": "https://institution.com/",
+    "area": "Software Development",
+    "studyType": "Bachelor",
+    "startDate": "2011-01-01",
+    "endDate": "2013-01-01",
+    "score": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  }],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "certificates": [{
+    "name": "Certificate",
+    "date": "2021-11-07",
+    "issuer": "Company",
+    "url": "https://certificate.com"
+  }],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "url": "https://publication.com",
+    "summary": "Description…"
+  }],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  }],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  }],
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference…"
+  }],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  "projects": [{
+    "name": "Project",
+    "startDate": "2019-01-01",
+    "endDate": "2021-01-01",
+    "description": "Description...",
+    "highlights": [
+      "Won award at AIHacks 2016"
+    ],
+    "url": "https://project.com/"
+  }]
+}   
