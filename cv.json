@@ -70,12 +70,12 @@
       "courses": []
     },
     {
-      "institution": "ALURA",
+      "institution": "ORACLE ONE ALURA",
       "url": "https://app.aluracursos.com/user/asprinosebastian",
       "area": "Desarrollor Frontend",
       "studyType": "curso",
-      "startDate": "2024-02-01",
-      "endDate": " 2024-07-17",
+      "startDate": "2024-01-17",
+      "endDate": " 2024-06-22",
       "score": "5.0",
       "courses": []
     },
@@ -97,52 +97,25 @@
       "issuer": "Coursera",
       "url": "https://www.coursera.org/account/accomplishments/verify/GVGQD9N5XS2L"
     },
-
-
-
-
     {
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
+      "name": "Oracle One Frontend",
+      "date": "2024-06-22",
+      "issuer": "Oracle Alura",
+      "url": "https://app.aluracursos.com/user/asprinosebastian/fullCertificate/c7bf8216db728bb08cca1b9a9ba4dc84"
     },
     {
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
+      "name": "Primeros pasos para la transformación ágil",
+      "date": "2024-04-30",
+      "issuer": "Alura",
+      "url": "https://app.aluracursos.com/user/asprinosebastian/course/fundamentos-agilidad-primeros-pasos-transformacion-agil/certificate"
     },
     {
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
-    },
-    {
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
+      "name": "Programacion Web",
+      "date": "2023-11-17",
+      "issuer": "Egg Live",
+      "url": "https://egg-csv-bulk-certificates-prod.s3.amazonaws.com/certificates/651e0faf9dc4abee0ccbfecc-1700273290866.pdf"
     }
   ],
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   "skills": [{
     "name": "Web Development",
