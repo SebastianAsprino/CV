@@ -1,18 +1,116 @@
 ---
-import cv from '../../cv1.json';
-
+import cv from '../../cv.json';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>				
-		<h1>Astro</h1>
-		<h2>{cv.hola}</h2>
-	</body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{`Portafolio de ${cv.basics.name} - ${cv.basics.label}`}</title>
+    <meta name="description" content={cv.basics.summary} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" as="image" href={cv.basics.image} />
+
+    <meta property="og:url" content={cv.basics.url} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={`Portafolio de ${cv.basics.name} - ${cv.basics.label}`} />
+    <meta property="og:description" content={cv.basics.summary} />
+    <meta property="og:image" content={cv.basics.image} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content={cv.basics.url.split("//")[1] ?? ''} />
+    <meta property="twitter:url" content={cv.basics.url} />
+    <meta name="twitter:title" content={`Portafolio de ${cv.basics.name} - ${cv.basics.label}`} />
+    <meta name="twitter:description" content={cv.basics.summary} />
+    <meta name="twitter:image" content="" />
+  </head>
+  <body>
+    <h1>hola</h1>
+  </body>
 </html>
+
+<style is:global>
+  html {
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      "Courier New",
+      Courier,
+      monospace;
+    background: #fff;
+    letter-spacing: -0.025rem;
+  }
+
+  body,
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+  }
+
+  p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    text-wrap: pretty;
+  }
+
+  .print {
+    display: none !important;
+  }
+
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+
+    .print {
+      display: block !important;
+    }
+
+    astro-dev-toolbar {
+      display: none !important;
+    }
+		article {
+      break-inside: avoid;
+    }
+  }
+</style>
+

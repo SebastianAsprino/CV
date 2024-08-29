@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Sebastian Alejandro Asprino Ortiz",
-    "label": "Fullstack",
+    "label": "Full Stack Developer con más de 2 años de experiencia",
     "image": "",
     "email": "contacto@asprino.dev",
     "phone": "+57 3013046076",
     "url": "https://asprino.dev",
-    "summary": "Soy un desarrollador full-stack apasionado con experiencia en la creación de soluciones innovadoras y eficientes. Como socio de Undercodes y Moecorp, tengo una trayectoria sólida en liderar proyectos y equipos para desarrollar Software de alta calidad.",
+    "summary": "Soy un desarrollador Full Stack apasionado con experiencia en la creación de soluciones innovadoras y eficientes. Como socio de Undercodes y Moecorp, tengo una trayectoria sólida en liderar proyectos y equipos para desarrollar Software de alta calidad.",
     "location": {
       "city": "Colombia",
       "countryCode": "CO"
@@ -631,7 +631,7 @@
 
 
 
-"projects": [
+"projects1  ": [
     {
       "name": "tc.asprino.dev",
       "isActive": true,
@@ -677,7 +677,7 @@
       "url": "https://pokemons.asprino.dev",
       "github": "https://github.com/SebastianAsprino/PI-Pokemon-main"
     }
-  ]
+  ],
 
 
 
