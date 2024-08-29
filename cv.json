@@ -110,6 +110,24 @@
       "url": "https://app.aluracursos.com/user/asprinosebastian/course/fundamentos-agilidad-primeros-pasos-transformacion-agil/certificate"
     },
     {
+      "name": "Git y GitHub",
+      "date": "2024-01-19",
+      "issuer": "Alura",
+      "url": "https://app.aluracursos.com/user/asprinosebastian/course/git-github-repositorio-commit-versiones/certificate"
+    },
+    {
+      "name": "HTTP",
+      "date": "2024-05-19",
+      "issuer": "Alura",
+      "url": "https://app.aluracursos.com/user/asprinosebastian/course/http-base-internet/certificate"
+    },
+    {
+      "name": "HTML5 y CSS3",
+      "date": "2024-04-30",
+      "issuer": "Alura",
+      "url": "https://app.aluracursos.com/user/asprinosebastian/course/html5-css3-avanzando-css/certificate"
+    },
+    {
       "name": "Programacion Web",
       "date": "2023-11-17",
       "issuer": "Egg Live",
@@ -117,16 +135,124 @@
     }
   ],
 
-  "skills": [{
-    "name": "Web Development",
-    "level": "Master",
-    "keywords": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ]
-  }],
 
+  "skills": [
+    {
+      "name": "Python",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend"
+      ]
+    },
+
+
+
+
+
+    {
+      "name": "Python",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend"
+      ]
+    },
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    }
+
+
+
+
+
+
+
+
+
+
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    }
+  ],
 
 
 
