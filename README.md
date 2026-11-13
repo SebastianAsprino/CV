@@ -1,47 +1,63 @@
-# Astro Starter Kit: Minimal
+# CV — Sebastian Asprino
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Currículum vitae / portafolio web de Sebastian Asprino construido con [Astro](https://astro.build).
+El contenido vive en un único archivo de datos (`cv.json`, con una estructura inspirada en
+[JSON Resume](https://jsonresume.org/schema)) y las páginas lo renderizan como HTML estático.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+> Estado: en desarrollo. Los datos del CV (experiencia, educación, certificados, habilidades,
+> idiomas, proyectos) ya están cargados en `cv.json`; las secciones visuales se están construyendo
+> componente por componente.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Características
 
-## 🚀 Project Structure
+- Sitio estático sin JavaScript en el cliente.
+- Contenido separado de la presentación: editar `cv.json` actualiza la página.
+- Metadatos SEO, Open Graph y Twitter generados a partir de los datos del CV.
+- Estilos preparados para impresión (`@media print`), para exportar el CV a PDF desde el navegador.
+- Verificación de tipos con `astro check` (configuración `strict` de TypeScript) antes de cada build.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Stack
+
+- Astro 4 + TypeScript (strict)
+- CSS plano con estilos con alcance por componente
+- [Bun](https://bun.sh) como gestor de paquetes (`bun.lockb`)
+
+## Estructura
 
 ```text
-/
-├── public/
+.
+├── cv.json                 # Fuente única de datos del CV
+├── public/                 # Archivos estáticos (favicon)
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── pages/index.astro   # Página principal: <head> con SEO y estilos globales
+│   └── sections/
+│       ├── section.astro   # Contenedor genérico de sección con título opcional
+│       └── basics.astro    # Sección de datos básicos (en construcción)
+├── astro.config.mjs
+└── tsconfig.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Uso
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```sh
+bun install       # Instala dependencias
+bun run dev       # Servidor de desarrollo en http://localhost:4321
+bun run build     # astro check + build estático en ./dist
+bun run preview   # Sirve el build localmente
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Editar el contenido
 
-## 🧞 Commands
+Modificá `cv.json`. Las secciones principales son `basics`, `work`, `volunteer`, `education`,
+`certificates`, `skills`, `languages`, `projects`, `references` y `awards`. Los campos de
+`basics` (`name`, `label`, `summary`, `url`, `image`) alimentan el título y los metadatos de la página.
 
-All commands are run from the root of the project, from a terminal:
+## Despliegue
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+`bun run build` genera un sitio estático en `dist/`, publicable en cualquier hosting estático
+(Vercel, Netlify, GitHub Pages, Cloudflare Pages, etc.).
 
-## 👀 Want to learn more?
+## Integración continua
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+`.github/workflows/ci.yml` instala dependencias con Bun y ejecuta `bun run build` (que incluye
+`astro check`) en cada push y pull request a `master`.

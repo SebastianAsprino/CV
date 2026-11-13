@@ -1,37 +1,39 @@
 ---
 import cv from '../../cv.json';
 import Basics from '../sections/basics.astro';
+
+const { name, label, summary, url, image } = cv.basics;
+const pageTitle = `Portafolio de ${name} - ${label}`;
+const domain = new URL(url).hostname;
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>{`Portafolio de ${cv.basics.name} - ${cv.basics.label}`}</title>
-    <meta name="description" content={cv.basics.summary} />
+    <title>{pageTitle}</title>
+    <meta name="description" content={summary} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preload" as="image" href={cv.basics.image} />
+    {image && <link rel="preload" as="image" href={image} />}
 
-    <meta property="og:url" content={cv.basics.url} />
+    <meta property="og:url" content={url} />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content={`Portafolio de ${cv.basics.name} - ${cv.basics.label}`} />
-    <meta property="og:description" content={cv.basics.summary} />
-    <meta property="og:image" content={cv.basics.image} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={summary} />
+    {image && <meta property="og:image" content={image} />}
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content={cv.basics.url.split("//")[1] ?? ''} />
-    <meta property="twitter:url" content={cv.basics.url} />
-    <meta name="twitter:title" content={`Portafolio de ${cv.basics.name} - ${cv.basics.label}`} />
-    <meta name="twitter:description" content={cv.basics.summary} />
-    <meta name="twitter:image" content="" />
+    <meta property="twitter:domain" content={domain} />
+    <meta property="twitter:url" content={url} />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={summary} />
+    {image && <meta name="twitter:image" content={image} />}
   </head>
   <body>
-		<main>
-			<Basics/>
-		</main>
-		
-    
+    <main>
+      <Basics />
+    </main>
   </body>
 </html>
 
@@ -87,43 +89,13 @@ import Basics from '../sections/basics.astro';
     width: 100%;
   }
 
-	@media (width <= 700px) {
+  @media (width <= 700px) {
     main {
       padding: 2rem;
     }
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	/* esta parte hace eferencia al print de momento no lo uso, tenerlo en cuenta */
+  /* Estilos para impresión (exportar el CV a PDF desde el navegador) */
   .print {
     display: none !important;
   }
@@ -140,7 +112,7 @@ import Basics from '../sections/basics.astro';
     astro-dev-toolbar {
       display: none !important;
     }
-		article {
+    article {
       break-inside: avoid;
     }
   }
